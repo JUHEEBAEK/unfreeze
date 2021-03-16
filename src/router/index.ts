@@ -1,11 +1,29 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import Home from "../views/Home.vue";
+import GameView from "../views/selected/GameView.vue";
+import ThemeView from "../views/selected/ThemeView.vue";
+import LevelView from "../views/selected/LevelView.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "Home",
     component: Home
+  },
+  {
+    path: "/gameView",
+    name: "GameView",
+    component: GameView
+  },
+  {
+    path: "/themeView",
+    name: "ThemeView",
+    component: ThemeView
+  },
+  {
+    path: "/levelView",
+    name: "LevelView",
+    component: LevelView
   },
   {
     path: "/about",

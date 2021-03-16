@@ -1,16 +1,17 @@
 <template>
   <div class="home">
-    <router-link to="/gameView">게임 선택</router-link>
+    <img alt="Vue logo" src="../assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-import TheAppBar from "@/components/layout/TheAppBar.vue"; // @ is an alias to /src
+import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
 
 @Options({
   components: {
-    TheAppBar
+    HelloWorld
   }
 })
 export default class Home extends Vue {}
