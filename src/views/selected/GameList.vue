@@ -1,13 +1,13 @@
 <template>
   <div class="game__list">
     <div class="game__item">
-      <router-link class="area__full" to="/themeView">
+      <router-link class="area__full" to="/themeList">
         <span class="item__text">초성 게임</span>
       </router-link>
     </div>
 
     <div class="game__item">
-      <router-link class="area__full" to="/themeView">
+      <router-link class="area__full" to="/themeList">
         <span class="item__text">4자 말하기</span>
       </router-link>
     </div>
@@ -17,7 +17,7 @@
 <script lang="ts">
 import { Vue } from "vue-class-component";
 
-export default class GameView extends Vue {}
+export default class GameList extends Vue {}
 </script>
 
 <style scoped lang="scss">

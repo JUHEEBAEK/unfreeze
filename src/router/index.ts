@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import Home from "../views/Home.vue";
-import GameView from "../views/selected/GameView.vue";
-import ThemeView from "../views/selected/ThemeView.vue";
-import LevelView from "../views/selected/LevelView.vue";
+import GameList from "../views/selected/GameList.vue";
+import ThemeList from "../views/selected/ThemeList.vue";
+import LevelList from "../views/selected/LevelList.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -11,19 +11,19 @@ const routes: Array<RouteRecordRaw> = [
     component: Home
   },
   {
-    path: "/gameView",
-    name: "GameView",
-    component: GameView
+    path: "/gameList",
+    name: "GameList",
+    component: GameList
   },
   {
-    path: "/themeView",
-    name: "ThemeView",
-    component: ThemeView
+    path: "/themeList",
+    name: "ThemeList",
+    component: ThemeList
   },
   {
-    path: "/levelView",
-    name: "LevelView",
-    component: LevelView
+    path: "/levelList",
+    name: "LevelList",
+    component: LevelList
   },
   {
     path: "/about",

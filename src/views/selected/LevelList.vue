@@ -1,13 +1,13 @@
 <template>
   <div class="level__list">
-    Level view 입니다.
+    Level list 입니다.
   </div>
 </template>
 
 <script lang="ts">
 import { Vue } from "vue-class-component";
 
-export default class LevelView extends Vue {}
+export default class LevelList extends Vue {}
 </script>
 
 <style scoped></style>
