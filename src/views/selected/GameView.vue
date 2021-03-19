@@ -1,15 +1,16 @@
 <template>
   <div class="game__list">
-    <router-link to="/themeView">
-      <div class="game__item">
-        <span>초성 게임</span>
-      </div>
-    </router-link>
-    <router-link to="/themeView">
-      <div class="game__item">
-        <span>4자 말하기</span>
-      </div>
-    </router-link>
+    <div class="game__item">
+      <router-link class="area__full" to="/themeView">
+        <span class="item__text">초성 게임</span>
+      </router-link>
+    </div>
+
+    <div class="game__item">
+      <router-link class="area__full" to="/themeView">
+        <span class="item__text">4자 말하기</span>
+      </router-link>
+    </div>
   </div>
 </template>
 
@@ -36,25 +37,25 @@ export default class GameView extends Vue {}
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e9f1ff;
-    // background-color: #f3f4f4;
-    // border: solid 1px #e9f1ff;
-    border-radius: 10px;
+    background-color: #ecf0f3;
+    border-radius: 36px;
     margin: 12px;
-    width: 50%;
-    height: 164px;
-    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.5),
-      15px 15px 15px rgba(0, 0, 0, 0.05);
-    &:nth-child(2) {
-      box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.5),
-        15px 15px 15px rgba(0, 0, 0, 0.05),
-        inset 4px 4px 5px rgba(255, 255, 255, 0.8),
-        inset 4px 4px 5px rgba(0, 0, 0, 0.05), 8px 50px 5px rgba(0, 0, 0, 0.05);
-    }
+    width: 30vmin;
+    height: 30vmin;
+    /*
+    box-shadow: y축  x축  가장자리 블러처리
+    처음 오른쪽 아래쪽, 그 다음 왼쪽 위쪽
+    */
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
     &:hover {
-      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
-        rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      box-shadow: 8px 8px 32px #cbced1, -8px -8px 32px #ffffff;
     }
+  }
+  .item__text {
+    font-size: 3.6vmin;
+    font-weight: 500;
+    font-style: normal;
+    font-family: sans-serif;
   }
 }
 </style>
