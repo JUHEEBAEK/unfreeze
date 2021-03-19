@@ -10,4 +10,8 @@ import { Vue } from "vue-class-component";
 export default class ThemeView extends Vue {}
 </script>
 
-<style scoped></style>
+<style scoped>
+.theme__list {
+  font-size: 1.6rem;
+}
+</style>
