@@ -6,7 +6,7 @@
       </router-link>
     </div>
     <div class="appBar__userInfo">
-      <span class="avatar__text"> UserName </span>
+      <span class="avatar__text"> {{ userName }} </span>
       <div class="avatar__container">
         <img src="@/assets/images/cow.png" class="avatar__image" />
       </div>
@@ -17,14 +17,20 @@
 <script lang="ts">
 import { Vue } from "vue-class-component";
 
-export default class TheAppBar extends Vue {}
+export default class TheAppBar extends Vue {
+  data() {
+    return {
+      userName: "주희"
+    };
+  }
+}
 </script>
 
 <style scoped lang="scss">
 .appBar__conatainer {
   width: 100%;
   height: 70px;
-  border-bottom: solid 1px #e9f1ff;
+  border-bottom: solid 1px #e8eaef;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,7 +42,7 @@ export default class TheAppBar extends Vue {}
     }
     span {
       color: black;
-      font-size: 20px;
+      font-size: 2.4rem;
       font-weight: 600;
     }
   }
@@ -46,6 +52,7 @@ export default class TheAppBar extends Vue {}
     align-items: center;
     .avatar__text {
       padding: 0 8px;
+      font-size: 1.6rem;
     }
     .avatar__container {
       .avatar__image {

@@ -12,8 +12,7 @@ export default class TheCenterView extends Vue {}
 
 <style scoped>
 .content__main {
-  width: 100%;
-  height: 100%;
-  /* background: honeydew; */
+  width: 100vw;
+  height: calc(100vh - 70px);
 }
 </style>
