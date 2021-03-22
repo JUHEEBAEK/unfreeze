@@ -1,18 +1,43 @@
 <template>
   <div class="theme__list">
-    Theme List 입니다.
+    <list-button-item :themes="themes"></list-button-item>
   </div>
 </template>
 
 <script lang="ts">
-import { Vue } from "vue-class-component";
+import { Options, Vue } from "vue-class-component";
+import itemConst from "@/assets/data/itemConst.json";
+import ListButtonItem from "@/components/ListButtonItem.vue";
 
-export default class ThemeList extends Vue {}
+interface Themes {
+  idfTheme: number;
+  name: string;
+  value: string;
+}
+
+@Options({
+  components: {
+    ListButtonItem
+  }
+})
+export default class ThemeList extends Vue {
+  themes = new Array<Themes>();
+
+  mounted() {
+    // It retains the property types for props
+    this.themes = itemConst.themes;
+  }
+}
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .theme__list {
-  padding: 36px;
+  width: 60vmin;
+  padding: 16px;
   font-size: 2.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 </style>

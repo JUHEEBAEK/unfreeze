@@ -23,19 +23,21 @@ export default class LevelList extends Vue {
   level = 12;
 
   mounted() {
+    // It retains the property types for props
     console.log(this.level);
   }
 }
 </script>
 
 <style scoped lang="scss">
-.theme__list {
+.level__list {
   width: 60vmin;
+  height: 100vmin;
   padding: 16px;
   font-size: 2.4rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: end;
   margin: 0 auto;
 }
 </style>

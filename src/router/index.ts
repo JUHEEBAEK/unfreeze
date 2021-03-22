@@ -2,6 +2,8 @@ import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import Home from "../views/Home.vue";
 import GameList from "../views/selected/GameList.vue";
 import ThemeList from "../views/selected/ThemeList.vue";
+import ThemeMain from "../views/selected/ThemeMain.vue";
+import ThemeViews from "../views/selected/ThemeViews.vue";
 import LevelList from "../views/selected/LevelList.vue";
 
 const routes: Array<RouteRecordRaw> = [
@@ -16,9 +18,22 @@ const routes: Array<RouteRecordRaw> = [
     component: GameList
   },
   {
-    path: "/themeList",
-    name: "ThemeList",
-    component: ThemeList
+    path: "/theme",
+    name: "ThemeMain",
+    redirect: { name: "ThemeList" },
+    component: ThemeMain,
+    children: [
+      {
+        path: "",
+        name: "ThemeList",
+        component: ThemeList
+      },
+      {
+        path: ":value",
+        name: "ThemeViews",
+        component: ThemeViews
+      }
+    ]
   },
   {
     path: "/levelList",

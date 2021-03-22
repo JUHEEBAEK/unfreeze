@@ -14,5 +14,7 @@ export default class TheCenterView extends Vue {}
 .content__main {
   width: 100vw;
   height: calc(100vh - 102px);
+  padding: 12px 30px;
+  overflow-y: scroll;
 }
 </style>

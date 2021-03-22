@@ -1,14 +1,14 @@
 <template>
   <div class="game__list">
     <div class="game__item">
-      <router-link class="area__full" to="/themeList">
-        <span class="item__text">초성 게임</span>
+      <router-link class="area__full" to="/theme">
+        <span class="item__text">초성 퀴즈</span>
       </router-link>
     </div>
 
     <div class="game__item">
-      <router-link class="area__full" to="/themeList">
-        <span class="item__text">4자 말하기</span>
+      <router-link class="area__full" to="/theme">
+        <span class="item__text">네글자 퀴즈</span>
       </router-link>
     </div>
   </div>
@@ -38,7 +38,7 @@ export default class GameList extends Vue {}
     align-items: center;
     justify-content: center;
     background-color: #ecf0f3;
-    border-radius: 36px;
+    border-radius: 24px;
     margin: 12px;
     width: 30vmin;
     height: 30vmin;
@@ -52,7 +52,8 @@ export default class GameList extends Vue {}
     }
   }
   .item__text {
-    font-size: 3.6vmin;
+    // font-size: 3.6vmin;
+    font-size: 3.6vw;
     font-weight: 500;
     font-style: normal;
     font-family: sans-serif;
