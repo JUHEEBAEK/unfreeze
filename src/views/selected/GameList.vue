@@ -53,7 +53,7 @@ export default class GameList extends Vue {}
   }
   .item__text {
     // font-size: 3.6vmin;
-    font-size: 3.6vw;
+    font-size: 2.8vmin;
     font-weight: 500;
     font-style: normal;
     font-family: sans-serif;

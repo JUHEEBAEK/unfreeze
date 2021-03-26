@@ -37,7 +37,7 @@ a {
   // justify-content: center;
   background-color: #ecf0f3;
   border-radius: 12px;
-  margin: 12px;
+  margin: 8px;
   width: 100vmin;
   height: 50px;
   // width: 20vmin;
