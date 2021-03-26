@@ -1,15 +1,7 @@
 <template>
   <div class="theme__main">
     <div class="main__header">
-      <ul class="breadCrumbs__container">
-        <li class="breadCrumbs__item breadCrumbs__item--to">
-          <router-link to="/gameList">
-            게임
-          </router-link>
-        </li>
-        <li class="breadCrumbs__item breadCrumbs--divider">/</li>
-        <li class="breadCrumbs__item">초성게임</li>
-      </ul>
+      <layout-bread-crumbs></layout-bread-crumbs>
     </div>
     <div class="main__content">
       <router-view />
@@ -18,8 +10,14 @@
 </template>
 
 <script lang="ts">
-import { Vue } from "vue-class-component";
+import { Vue, Options } from "vue-class-component";
+import LayoutBreadCrumbs from "@/components/layout/BreadCrumbs.vue";
 
+@Options({
+  components: {
+    LayoutBreadCrumbs
+  }
+})
 export default class ThemeMain extends Vue {}
 </script>
 
@@ -31,19 +29,6 @@ export default class ThemeMain extends Vue {}
     height: 4vh;
     display: flex;
     align-items: center;
-    .breadCrumbs__container {
-      list-style: none;
-      .breadCrumbs__item {
-        float: left;
-        font-size: 1.6rem;
-        font-weight: 600;
-        margin-right: 12px;
-        color: grey;
-        &--to {
-          color: blue;
-        }
-      }
-    }
   }
 
   .main__content {
