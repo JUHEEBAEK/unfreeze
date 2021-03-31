@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <router-link class="button__item" to="/gameList">게임 선택</router-link>
+    <router-link class="button__item" to="/game/list">게임 선택</router-link>
   </div>
 </template>
 

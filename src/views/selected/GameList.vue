@@ -1,23 +1,32 @@
 <template>
   <div class="game__list">
-    <div class="game__item">
-      <router-link class="area__full" to="/theme">
-        <span class="item__text">초성 퀴즈</span>
-      </router-link>
-    </div>
-
-    <div class="game__item">
-      <router-link class="area__full" to="/theme">
-        <span class="item__text">네글자 퀴즈</span>
-      </router-link>
-    </div>
+    <button-list-game :games="games"></button-list-game>
   </div>
 </template>
 
 <script lang="ts">
-import { Vue } from "vue-class-component";
+import { Options, Vue } from "vue-class-component";
+import itemConst from "@/assets/data/itemConst.json";
+import ButtonListGame from "@/components/buttonList/Game.vue";
 
-export default class GameList extends Vue {}
+interface Games {
+  idfGame: number;
+  name: string;
+  value: string;
+}
+
+@Options({
+  components: {
+    ButtonListGame
+  }
+})
+export default class GameList extends Vue {
+  games = new Array<Games>();
+
+  created() {
+    this.games = itemConst.games;
+  }
+}
 </script>
 
 <style scoped lang="scss">
@@ -27,36 +36,5 @@ export default class GameList extends Vue {}
   justify-content: center;
   align-items: center;
   padding: 16px;
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  .game__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ecf0f3;
-    border-radius: 24px;
-    margin: 12px;
-    width: 30vmin;
-    height: 30vmin;
-    /*
-    box-shadow: y축  x축  가장자리 블러처리
-    처음 오른쪽 아래쪽, 그 다음 왼쪽 위쪽
-    */
-    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
-    &:hover {
-      box-shadow: 8px 8px 32px #cbced1, -8px -8px 32px #ffffff;
-    }
-  }
-  .item__text {
-    // font-size: 3.6vmin;
-    font-size: 2.8vmin;
-    font-weight: 500;
-    font-style: normal;
-    font-family: sans-serif;
-  }
 }
 </style>

@@ -26,10 +26,7 @@ export default defineComponent({
     },
     crumbs: {
       type: Array,
-      default: () => [
-        { name: "게임", to: "/gameList", isActive: true },
-        { name: "초성게임", to: "", isActive: false }
-      ],
+      default: () => [{ name: "게임", to: "/gameList", isActive: true }],
       required: true
     }
   },

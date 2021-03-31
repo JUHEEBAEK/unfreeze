@@ -1,4 +1,13 @@
 {
+  "games": [{
+    "idfGame": 1,
+    "name": "초성게임",
+    "value": "initial"
+  }, {
+    "idfGame": 2,
+    "name": "네글자게임",
+    "value": "fourLetters"
+  }],
   "themes": [{
       "idfTheme": 1,
       "name": "동물",
