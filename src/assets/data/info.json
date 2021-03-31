@@ -1,0 +1,44 @@
+{
+  "games": {
+    "1": {
+      "idfGame": 1,
+      "name": "초성게임",
+      "value": "initial",
+      "descrition": "주어진 초성을 보고 알맞은 답을 쓰시오."
+    },
+    "2": {
+      "idfGame": 2,
+      "name": "네글자게임",
+      "value": "fourLetters",
+      "descrition": "앞에 두단어를 보고 뒤에 단어를 맞춰 4글자를 완성하시오."
+    }
+  },
+  "themes": {
+    "1": {
+      "idfTheme": 1,
+      "name": "동물",
+      "value": "animal"
+    },
+    "2": {
+      "idfTheme": 2,
+      "name": "꽃",
+      "value": "flower"
+    },
+    "3": {
+      "idfTheme": 3,
+      "name": "과일",
+      "value": "fruit"
+    },
+    "4": {
+      "idfTheme": 4,
+      "name": "한국영화",
+      "value": "koreaMovie"
+    },
+    "5": {
+      "idfTheme": 5,
+      "name": "외국영화",
+      "value": "foreignMovie"
+    }
+  }
+
+}
