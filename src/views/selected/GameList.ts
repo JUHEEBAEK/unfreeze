@@ -2,11 +2,7 @@ import { Options, Vue } from "vue-class-component";
 import itemConst from "@/assets/data/itemConst.json";
 import ButtonListGame from "@/components/buttonList/Game.vue";
 
-interface Games {
-  idfGame: number;
-  name: string;
-  value: string;
-}
+import { Games } from "@/types/Games";
 
 @Options({
   components: {

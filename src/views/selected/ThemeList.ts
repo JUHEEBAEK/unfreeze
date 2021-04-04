@@ -3,17 +3,8 @@ import itemConst from "@/assets/data/itemConst.json";
 import ListButtonItem from "@/components/ListButtonItem.vue";
 import LayoutBreadCrumbs from "@/components/layout/BreadCrumbs.vue";
 
-interface Themes {
-  idfTheme: number;
-  name: string;
-  value: string;
-}
-
-interface Crumbs {
-  name: string;
-  to: string;
-  isActive: boolean;
-}
+import { Themes } from "@/types/Themes";
+import { Crumbs } from "@/types/Crumbs";
 
 @Options({
   components: {
