@@ -14,17 +14,7 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Vue } from "vue-class-component";
-
-export default class TheAppBar extends Vue {
-  data() {
-    return {
-      userName: "주희"
-    };
-  }
-}
-</script>
+<script lang="ts" src="./TheAppBar.ts"></script>
 
 <style scoped lang="scss">
 .appBar__conatainer {
