@@ -1,4 +1,5 @@
 import { defineComponent } from "vue";
+import { Crumbs } from "@/types/Crumbs";
 
 export default defineComponent({
   props: {
