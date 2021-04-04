@@ -1,24 +1,14 @@
 <template>
   <div id="nav" class="app__container">
-    <the-app-bar></the-app-bar>
-    <the-center-view></the-center-view>
-    <the-footer />
+    <layout-the-app-bar></layout-the-app-bar>
+    <layout-the-center-view></layout-the-center-view>
+    <layout-the-footer />
   </div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import TheAppBar from "@/components/layout/TheAppBar.vue"; // @ is an alias to /src
-import TheCenterView from "@/components/layout/TheCenterView.vue"; // @ is an alias to /src
-import TheFooter from "@/components/layout/TheFooter.vue"; // @ is an alias to /src
+import { Vue } from "vue-class-component";
 
-@Options({
-  components: {
-    TheAppBar,
-    TheCenterView,
-    TheFooter
-  }
-})
 export default class App extends Vue {}
 </script>
 

@@ -1,5 +1,4 @@
-import { Options, Vue } from "vue-class-component";
-import LevelButtonItem from "@/components/LevelButtonItem.vue";
+import { Vue } from "vue-class-component";
 
 interface Level {
   idfLevel: number;
@@ -7,11 +6,6 @@ interface Level {
   value: string;
 }
 
-@Options({
-  components: {
-    LevelButtonItem
-  }
-})
 export default class LevelList extends Vue {
   level = 12;
 

@@ -5,14 +5,8 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import TheAppBar from "@/components/layout/TheAppBar.vue"; // @ is an alias to /src
+import { Vue } from "vue-class-component";
 
-@Options({
-  components: {
-    TheAppBar
-  }
-})
 export default class Home extends Vue {}
 </script>
 
