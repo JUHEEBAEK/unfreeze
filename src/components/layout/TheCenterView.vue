@@ -4,11 +4,7 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Vue } from "vue-class-component";
-
-export default class TheCenterView extends Vue {}
-</script>
+<script lang="ts" src="./TheCenterView.ts"></script>
 
 <style scoped>
 .content__main {

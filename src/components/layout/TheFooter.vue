@@ -4,17 +4,7 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Vue } from "vue-class-component";
-
-export default class TheFooter extends Vue {
-  data() {
-    return {
-      name: "made in 100"
-    };
-  }
-}
-</script>
+<script lang="ts" src="./TheFooter.ts"></script>
 
 <style scoped lang="scss">
 .footer__container {

@@ -9,17 +9,7 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Vue, Options } from "vue-class-component";
-import LayoutBreadCrumbs from "@/components/layout/BreadCrumbs.vue";
-
-@Options({
-  components: {
-    LayoutBreadCrumbs
-  }
-})
-export default class ThemeMain extends Vue {}
-</script>
+<script lang="ts" src="./ThemeMain.ts"></script>
 
 <style scoped lang="scss">
 .theme__main {
