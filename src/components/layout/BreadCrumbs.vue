@@ -6,10 +6,12 @@
           <span>{{ crumb.name }}</span>
         </router-link>
       </li>
-      <li v-if="crumb.isActive" class="breadCrumbs__item breadCrumbs--divider">
+      <li
+        v-if="index === crumbs.length"
+        class="breadCrumbs__item breadCrumbs--divider"
+      >
         {{ divider }}
       </li>
-      <li v-else class="breadCrumbs__item">초성게임</li>
     </template>
   </ul>
 </template>

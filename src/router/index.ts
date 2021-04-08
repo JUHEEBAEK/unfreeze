@@ -21,7 +21,7 @@ const routes: Array<RouteRecordRaw> = [
     component: ThemeList
   },
   {
-    path: "/game/:idfGame/theme/:name/level/:level",
+    path: "/game/:idfGame/theme/:value",
     name: "LevelList",
     component: LevelList
   },

@@ -1,6 +1,9 @@
 <template>
   <div class="theme__item" v-for="(theme, index) in themes" :key="index">
-    <router-link class="area__full" :to="`/theme/${theme.value}`">
+    <router-link
+      class="area__full"
+      :to="`/game/${idfGame}/theme/${theme.value}`"
+    >
       <span class="item__text">{{ theme.name }}</span>
     </router-link>
   </div>
