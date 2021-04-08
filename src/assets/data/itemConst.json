@@ -2,11 +2,13 @@
   "games": [{
     "idfGame": 1,
     "name": "초성게임",
-    "value": "initial"
+    "value": "initial",
+    "description": "주어진 초성을 보고 알맞은 답을 쓰시오."
   }, {
     "idfGame": 2,
     "name": "네글자게임",
-    "value": "fourLetters"
+    "value": "fourLetters",
+    "description": "앞에 두단어를 보고 뒤에 단어를 맞춰 4글자를 완성하시오."
   }],
   "themes": [{
       "idfTheme": 1,
