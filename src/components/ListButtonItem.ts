@@ -7,6 +7,10 @@ export default defineComponent({
       type: Array,
       default: () => [],
       required: true
+    },
+    idfGame: {
+      type: String,
+      required: true
     }
   },
   setup() {

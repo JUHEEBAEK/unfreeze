@@ -3,7 +3,7 @@
     <layout-bread-crumbs :crumbs="breadcrumbs"></layout-bread-crumbs>
   </div>
   <div class="theme__list">
-    <list-button-item :themes="themes"></list-button-item>
+    <list-button-item :idfGame="idfGame" :themes="themes"></list-button-item>
   </div>
 </template>
 
