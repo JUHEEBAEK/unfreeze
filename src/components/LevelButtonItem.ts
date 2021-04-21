@@ -5,9 +5,20 @@ export default defineComponent({
   props: {
     levels: {
       type: Number,
-      // default: () => [],
       required: true
+    },
+    idfGame: {
+      type: String,
+      required: true
+    },
+    themeValue: {
+      type: String,
+      required: true,
+      default: "animal"
     }
+  },
+  data() {
+    return {};
   },
   setup() {
     return {};

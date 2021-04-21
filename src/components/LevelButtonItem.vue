@@ -1,6 +1,9 @@
 <template>
-  <div class="theme__item" v-for="(level, index) in levels" :key="index">
-    <router-link class="area__full" :to="`/theme/${level}`">
+  <div class="level__item" v-for="(level, index) in levels" :key="index">
+    <router-link
+      class="area__full"
+      :to="`/game/${idfGame}/theme/${themeValue}/level/${level}`"
+    >
       <span class="item__text">{{ level }} 단계</span>
     </router-link>
   </div>
@@ -15,14 +18,14 @@ a {
   justify-content: center;
   width: 100%;
 }
-.theme__item {
+.level__item {
   display: flex;
   align-items: center;
   // justify-content: center;
   background-color: #ecf0f3;
   border-radius: 12px;
   margin: 8px;
-  width: 100vmin;
+  width: 60vmin;
   height: 50px;
   // width: 20vmin;
   // height: 8vmin;

@@ -22,7 +22,7 @@
       <input
         type="submit"
         value="제출"
-        class="game_answer_submit"
+        class="game__answer_submit"
         @click="checkAnswer()"
       />
     </div>
@@ -67,7 +67,7 @@
       background-color: white;
       font-size: 20px;
     }
-    .game_answer_submit {
+    .game__answer_submit {
       margin: 0 4px 0 4px;
       padding: 0 4px 0 4px;
       font-size: 20px;

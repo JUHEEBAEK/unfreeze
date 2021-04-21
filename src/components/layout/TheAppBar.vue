@@ -2,7 +2,7 @@
   <div class="appBar__conatainer">
     <div class="appBar__title">
       <router-link to="/" class="router__item">
-        <span>Title</span>
+        <span> {{ title }} </span>
       </router-link>
     </div>
     <div class="appBar__userInfo">

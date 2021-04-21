@@ -9,7 +9,7 @@ export default defineComponent({
     },
     crumbs: {
       type: Array,
-      default: () => [{ name: "게임", to: "/gameList", isActive: true }],
+      default: () => [{ name: "GameList", to: "/game/list", isActive: true }],
       required: true
     }
   },
