@@ -1,37 +1,30 @@
-import { Vue } from "vue-class-component";
+import { defineComponent } from "vue";
 import itemConst from "@/assets/data/itemConst.json";
-import dataInfo from "@/assets/data/info.json";
 
 import { Themes } from "@/types/Themes";
-import { Crumbs } from "@/types/Crumbs";
 import { Games } from "@/types/Games";
 
-export default class ThemeList extends Vue {
-  games = new Array<Games>();
-  themes = new Array<Themes>();
-  breadcrumbs = new Array<Crumbs>();
-  idfGame: string[] | string = "";
-  gameList: { [key: string]: { [key: number]: Array<Games> } } = {};
-  // gameinfo: Games = {};
+export default defineComponent({
+  data() {
+    return {
+      games: new Array<Games>(),
+      themes: new Array<Themes>(),
+      idfGame: ""
+    };
+  },
 
   created(): void {
-    this.gameList = dataInfo.games;
-    this.idfGame = this.$router.currentRoute.value.params.idfGame;
-    console.log("this.idfGame", this.idfGame);
+    // idfGame router params로 가져오기.
+    const { idfGame } = this.$route.params;
+    this.idfGame = idfGame.toString();
     this.themes = itemConst.themes;
-    this.breadcrumbs = [
-      {
-        name: "게임",
-        to: "/game/list",
-        isActive: true
-      }
-    ];
+    // 나중에 vuex로 바꾸기
+    this.setTitle();
+  },
 
-    this.getgameInfo(this.idfGame);
+  methods: {
+    setTitle() {
+      console.log("set Title: title 이름 초성게임이라고 바꾸기");
+    }
   }
-
-  getgameInfo(key: string | string[]): void {
-    console.log("res", this.gameList[key]);
-    // this.gameInfo = this.gameList[key];
-  }
-}
+});
