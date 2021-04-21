@@ -3,6 +3,7 @@ import Home from "../views/Home.vue";
 import GameList from "../views/selected/GameList.vue";
 import ThemeList from "../views/selected/ThemeList.vue";
 import LevelList from "../views/selected/LevelList.vue";
+import ChoSung from "@/components/Game/ChoSung";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -18,12 +19,20 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/game/:idfGame/theme",
     name: "ThemeList",
-    component: ThemeList
+    component: ThemeList,
+    props: true
   },
   {
     path: "/game/:idfGame/theme/:value",
     name: "LevelList",
-    component: LevelList
+    component: LevelList,
+    props: true
+  },
+  {
+    path: "/game/:idfGame/theme/:value/level/:level",
+    name: "ChoSungGame",
+    component: ChoSung,
+    props: true
   },
   {
     path: "/about",
