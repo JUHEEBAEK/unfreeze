@@ -11,10 +11,9 @@ export default defineComponent({
       type: String,
       required: true
     },
-    themeValue: {
+    idfTheme: {
       type: String,
-      required: true,
-      default: "animal"
+      required: true
     }
   },
   data() {

@@ -2,7 +2,7 @@
   <div class="level__item" v-for="(level, index) in levels" :key="index">
     <router-link
       class="area__full"
-      :to="`/game/${idfGame}/theme/${themeValue}/level/${level}`"
+      :to="`/game/${idfGame}/theme/${idfTheme}/level/${level}`"
     >
       <span class="item__text">{{ level }} 단계</span>
     </router-link>

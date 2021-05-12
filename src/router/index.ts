@@ -23,13 +23,13 @@ const routes: Array<RouteRecordRaw> = [
     props: true
   },
   {
-    path: "/game/:idfGame/theme/:value",
+    path: "/game/:idfGame/theme/:idfTheme",
     name: "LevelList",
     component: LevelList,
     props: true
   },
   {
-    path: "/game/:idfGame/theme/:value/level/:level",
+    path: "/game/:idfGame/theme/:idfTheme/level/:level",
     name: "ChoSungGame",
     component: ChoSung,
     props: true

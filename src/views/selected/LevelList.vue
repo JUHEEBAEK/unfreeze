@@ -1,12 +1,15 @@
 <template>
   <div class="level__list">
     <div class="main__header">
-      <layout-bread-crumbs :item="breadCrumbs"></layout-bread-crumbs>
+      <layout-bread-crumbs
+        :crumbs="breadcrumbs"
+        divider="/"
+      ></layout-bread-crumbs>
     </div>
     <div class="main__content">
       <level-button-item
         :idfGame="idfGame"
-        :themeValue="value"
+        :idfTheme="idfTheme"
         :levels="level"
       ></level-button-item>
     </div>

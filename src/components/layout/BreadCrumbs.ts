@@ -12,9 +12,5 @@ export default defineComponent({
       default: () => [{ name: "GameList", to: "/game/list", isActive: true }],
       required: true
     }
-  },
-
-  setup() {
-    return {};
   }
 });

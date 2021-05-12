@@ -6,8 +6,11 @@
           <span>{{ crumb.name }}</span>
         </router-link>
       </li>
+      <li v-else class="breadCrumbs__item">
+        <span>{{ crumb.name }}</span>
+      </li>
       <li
-        v-if="index === crumbs.length"
+        v-if="index !== crumbs.length - 1"
         class="breadCrumbs__item breadCrumbs--divider"
       >
         {{ divider }}
