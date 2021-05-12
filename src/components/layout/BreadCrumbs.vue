@@ -29,9 +29,9 @@
     font-size: 1.6rem;
     font-weight: 600;
     margin-right: 12px;
-    color: grey;
+    color: #666666;
     &--to {
-      color: blue;
+      color: #000000;
     }
   }
 }

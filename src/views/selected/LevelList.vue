@@ -27,5 +27,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
+  .main__header {
+    padding: 12px 0;
+  }
 }
 </style>

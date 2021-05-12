@@ -33,7 +33,7 @@ a {
     box-shadow: y축  x축  가장자리 블러처리
     처음 오른쪽 아래쪽, 그 다음 왼쪽 위쪽
     */
-  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+  box-shadow: 8px 8px 16px #cbced1, -8px -8px 12px #ffffff;
   &:hover {
     box-shadow: 8px 8px 32px #cbced1, -8px -8px 32px #ffffff;
   }
